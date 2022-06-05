@@ -60,7 +60,6 @@ public class WishListRepositoryTest {
     public void deleteTest(){
         var wishListEntity = create();
         wishListRepository.save(wishListEntity);
-
         wishListRepository.deleteById(1);
 
         int count = wishListRepository.listAll().size();
