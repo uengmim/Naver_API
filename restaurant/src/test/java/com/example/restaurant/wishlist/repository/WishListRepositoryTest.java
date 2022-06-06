@@ -42,6 +42,7 @@ public class WishListRepositoryTest {
         var saveEntity = wishListRepository.save(expected);
 
         Assertions.assertEquals("update test", saveEntity.getTitle());
+
         Assertions.assertEquals(1, wishListRepository.listAll().size());
 
 
