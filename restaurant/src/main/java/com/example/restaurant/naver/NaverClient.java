@@ -36,7 +36,6 @@ public class NaverClient {
 
         var headers = new HttpHeaders();
         headers.set("X-Naver-Client-Id",naverClientId);
-
         headers.set("X-Naver-Client-Secret",naverClientSecret);
 
         headers.setContentType(MediaType.APPLICATION_JSON);
