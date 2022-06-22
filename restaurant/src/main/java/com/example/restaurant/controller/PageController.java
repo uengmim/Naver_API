@@ -12,5 +12,10 @@ public class PageController {
     @GetMapping("/main")
     public ModelAndView main(){
         return new ModelAndView("aaaa/main");
+        
+    @PostMapping("")
+    public WishListDto add(@RequestBody WishListDto wishListDto){
+        log.info("{}", wishListDto);
+        return wishListService.add(wishListDto);
     }
 }
